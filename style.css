@@ -87,14 +87,17 @@ img {
 
 .content h1 {
     color: #ffffff;
-    font-size: 2.8rem;
+    font-size: 2.9rem;
+    line-height: 130%;
     /* font-size: 42px; */
 }
 
 .content p {
-    padding-top: 15px;
+    padding-top: 25px;
     margin-right: 150px;
     font-size: 1.3rem;
+    line-height: 140%;
+    color: #B3B3B3;
 }
 
 .cta {
@@ -102,7 +105,7 @@ img {
     background-color: #4351fc;
     border-radius: 3px;
     padding: 15px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .cta a {
@@ -110,6 +113,29 @@ img {
     flex-direction: row;
     justify-content: center;
     font-weight: 700;
+}
+
+.info-container {
+    display: flex;
+    margin-top: 110px;
+}
+
+.info {
+    width: 200px;
+}
+
+.info h2, p {
+    color: #ffffff;
+}
+
+.info h2 {
+    font-size: 40px;
+}
+
+.info p {
+    width: 120px;
+    font-size: 18px;
+    padding-top: 15px;
 }
 
 /* SERVICIOS  */
@@ -132,6 +158,8 @@ img {
 .container-servicios p {
     padding-bottom: 10px;
     font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 40px;
     /* font-size: 18px; */
 }
 
@@ -147,6 +175,7 @@ img {
     text-align: center;
     background-color: #000000;
     padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .servicios-item {
