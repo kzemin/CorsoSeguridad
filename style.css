@@ -14,7 +14,7 @@ h6 {
 p {
     font-family: "Lato", sans-serif;
     font-weight: 100;
-    color: #696969;
+    color: #B3B3B3;
     font-size: 20px;
 }
 
@@ -207,98 +207,94 @@ img {
 
 /* CONTACTO */
 
-.container-tercero{
-    background-color: #000000;
-    margin: left;
+.container-tercero {
     display: flex;
-    width: 90%;
-    max-width: 400px;
     flex-direction: column;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    text-align: center;
+    background-color: #272a32;
+    max-width: 600px;
+    padding: 2.2em 2.5em;
+    height: 600px;
 }
-.container-contacto{
-    height: 160px;
-    width: 100%;
-    background-color: #000000;
+
+.container-contacto {
+    background-color: #272a32;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
     margin-top: 3em;
     display: grid;
-    gap: 2.5em;
-    
+    gap: 2.7em;
 }
-.contacto-h h2{
-    font-family: "lato" ,sans-serif;
+
+.contacto-title h2 {
+    color: #ffffff;
+    font-size: 2rem;
     display: flex;
-    color: white;
-    font-weight: 500;
-    margin: 0px 5.3em;
-    align-content: center;
 }
 
-.form{
-    background: #000000;
-}
-
-.form-group{
-    position:  relative;
+.form-group {
+    position: relative;
     --color: #5757577e;
-
-
+    padding-top: 15px;
 }
-.form-input{
+
+.form-input {
     width: 100%;
     background: none;
-    color: #706c6c;
-    font-size: 3rem;
-    padding: .6em .3em;
+    color: #B3B3B3;
+    font-size: 1.2rem;
     border: none;
     outline: none;
     border-bottom: 1px solid var(--color);
 }
 
-.form-input:not(:placeholder-shown){
+.form-input:not(:placeholder-shown) {
     color: #4d464d;
 }
 
 .form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label{
-    transform: translateY(-12px) scale(.7);
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-2px) scale(.9);
     transform-origin: left top;
-    color: gray;
-
-
 }
-.form-label{
-    font-family: "lato", sans-serif;
-    font-size: 20px;
-    color: white;
-    cursor:pointer;
+
+.form-label {
     position: absolute;
-    top: 0;
+    font-family: "lato", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: #B3B3B3;
+    top: -20px;
     left: 5px;
-    transform: translateY(10px);
+    transform: translateY(15px);
     transition: transform .5s, color .3s;
+    cursor: pointer;
 }
 
-.form-submit{
-    background-color: #696969;
-    color: fff;
-    font-family: "lato", sans-serif ;
-    font-weight: 300;
+.cta {
+    width: 100px;
+    background-color: #4351fc;
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.form-submit {
+    background-color: #4351fc;
     font-size: 1rem;
-    padding: 2em 0;
-    
+    padding: 1em 0;
     border: none;
-    border-radius: .5em;
+    border-radius: .25em;
+    text-align: center;
+    justify-content: center;
 }
 
-.form-line{
+.form-submit a {
+    font-weight: 700;
+}
+
+.form-line {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -310,11 +306,11 @@ img {
     transition: .4s;
 }
 .form-input:focus ~ .form-line,
-.form-input:not(:placeholder-shown) ~ .form-line{
+.form-input:not(:placeholder-shown) ~ .form-line {
     transform: scale(1);
 }
 
-@media (max-width:425px){
+@media (max-width:425px) {
     .contacto-h h2{
         font-size: 1.8rem;
     }
