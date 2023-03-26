@@ -4,7 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Formulario.php">
+    <link rel="stylesheet" href="exito.html">
     <title>Corso Seguridad</title>
+    <script src="Contacto.js"></script>
 </head>
 <body>
 
@@ -17,7 +20,7 @@
                 <ul class="nav__links">
                   <li><a class="" href="#">Nosotros</a></li>
                   <li><a class="" href="#">Servicios</a></li>
-                  <li><a class="" href="#">Contactar</a></li>
+                  <li><a class="" href="#abajo">Contactar</a></li>
                 </ul>
             </nav>
     
@@ -31,8 +34,9 @@
                     Explorá nuevas posibilidades en la era digital. <br> Dispositivos de la mayor calidad y seguridad, <br> listos para ser controlados en tiempo real.
                 </p>
                 <div class="cta">
-                    <a href="#">Contáctanos</a>
+                    <a href="#abajo">Contáctanos</a>
                 </div>
+            
                 <div class="info-container">
                     <div class="info"> 
                         <h2>
@@ -95,38 +99,40 @@
 
     <!-- CONTACTO -->
     <div class="container-tercero">
-        <div class="container-contacto-general">
+        <div class="container-contacto-general" id="abajo">
             <div class="contacto-title">
                 <h2>Entremos en contacto </h2>
             </div>
             <div class="container-contacto">
-                <div class="form-group">
-                    <input type="text" id="name" class="form-input" placeholder=" ">
-                    <label for="name" class="form-label">Nombre</label>
-                    <span class="form-line"></span>
-                </div>
-    
-                <div class="form-group">
-                    <input type="text" id="email" class="form-input" placeholder=" ">
-                    <label for="email" class="form-label">Email</label>
-                    <span class="form-line"></span>
-                </div>
-    
-                <div class="form-group">
-                    <input type="text" id="titulo" class="form-input" placeholder=" ">
-                    <label for="titulo" class="form-label">Título</label>
-                    <span class="form-line"></span>
-                </div>
-    
-                <div class="form-group">
-                    <input type="text" id="mensaje" class="form-input" placeholder=" ">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <span class="form-line"></span>
-                </div>
-    
-                <div class="form-submit">
-                    <a href="#">Enviar</a>
-                </div>
+                <form class="container-contacto" action="Formulario.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-input" name="name" placeholder=" ">
+                        <label for="name" class="form-label">Nombre</label>
+                        <span class="form-line"></span>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" id="email" class="form-input" name="email" placeholder=" ">
+                        <label for="email" class="form-label">Email</label>
+                        <span class="form-line"></span>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" id="titulo" class="form-input" name="titulo" placeholder=" ">
+                        <label for="titulo" class="form-label">Título</label>
+                        <span class="form-line"></span>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" id="mensaje" class="form-input" name="mensaje" placeholder=" ">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <span class="form-line"></span>
+                    </div>
+        
+                    <div class="form-submit">
+                        <button>Enviar</button>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="container-tercero-info">
@@ -142,19 +148,27 @@
             <div class="container-info">
                 <img src="img/icons8-phone-100.png" alt="">
                 <div class="text-info">
-                    <p><b>Teléfono: </b>+54 9 11 4146 9353</p>
+                    <p><b>Teléfono:
+                        <a href="callto:+54 9 11 4146 9353">+54 9 11 4146 9353</a>
+                    </p>
                 </div>
             </div>
             <div class="container-info">
                 <img src="img/icons8-telegram-app-100.png" alt="">
                 <div class="text-info">
-                    <p><b>Email: </b>facupaezk@gmail.com <br> lucasseyahian15@gmail.com</p>
+                    <p><b>Email:
+                        <a href="mailto:facupaezk@gmail.com?subject=Asunto&body=Cuerpo del mensaje" target="_blank">facupaezk@gmail.com <br> </a>
+                        <a href="mailto:lucasseyahian15@gmail.com?subject=Asunto&body=Cuerpo del mensaje"target="_blank">lucasseyahian15@gmail.com</a>
+                    </p>
                 </div>
             </div>
             <div class="container-info">
                 <img src="img/icons8-instagram-100.png" alt="">
                 <div class="text-info">
-                    <p><b>Instagram: </b>@CorsoSeguridad</p>
+                    <p><b>Instagram:
+                        <a href="http://instagram.com/corsoseguridad" target="_blank" >@CorsoSeguridad</a>
+                    </p>
+
                 </div>
             </div>
         </div>
